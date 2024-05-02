@@ -16,7 +16,8 @@
 	}
 	.aboutPic-grid{
 	    display: grid;
-	    grid-template-columns: 50% 50%;
+	    grid-template-columns: 1fr 1fr;
+	    gap:30px;
 }
         /* Global styles (dark mode) */
         body {
@@ -48,12 +49,12 @@
             margin-right: 20px;
         }
 	pic-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
+	    display: flex;
+  	    justify-content: center;
         }
         .pic-image {
-            width: 20vw; /* Set a specific size related to page width */
+            width: 20vw;
+	    max-width: 300px;
             height: auto;
             border-radius: 50%;
             overflow: hidden;

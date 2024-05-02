@@ -1,323 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fulton County Schools Rule Violation Report Form</title>
+    <title>Eren Alp Ertem - Personal Website</title>
     <style>
+	.mycontainer {
+	  display: flex;
+	}
+	.mycontainer > div {
+	  width:33%;
+	}
+        /* Global styles (dark mode) */
         body {
+            background-color: #1a1a1a;
+            color: #ffffff;
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        /* Navigation bar */
+        nav {
+            background-color: #444; /* Dark gray */
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
         }
-        .logo {
-            display: block;
-            margin: 10px 0;
+        nav  a {
+            color: #ff9900;
+            text-decoration: none;
         }
-        form {
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: #1a1a1a;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+	selfie-container {
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
         }
-        label, select, textarea, input[type="submit"] {
-            display: block;
-            margin-bottom: 15px;
+        .selfie-image {
+            width: 20vw; /* Set a specific size related to page width */
+            height: auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .selfie-image img {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
+            height: auto;
         }
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-        /* Style the placeholder text */
-        select option[disabled] {
-            color: #999;
-        }
+	div{
+ 	    width:300px;
+ 	    margin:auto;
+	    display: inline-block;
+	}
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://th.bing.com/th/id/OIP.rLJIXh7V3UVo66KWV53IcgAAAA?rs=1&pid=ImgDetMain&adlt=strict" alt="Fulton County Schools Logo" class="logo">
-    
-        <form action="submit_form.php" method="post">
-            <!-- Options (group together) -->
-            <select id="rules" name="rules">
-                <option value="" disabled="" selected="">Select the violated rule</option>
-                <option value="rule1">RULE 1: DISRUPTION AND INTERFERENCE WITH SCHOOL</option>
-                <option value="rule2">RULE 2: DAMAGE AND/OR ALTERATION OF SCHOOL PROPERTY OR PRIVATE PROPERTY</option>
-                <option value="rule3">RULE 3: UNAUTHORIZED ENTRY/TRESPASSING</option>
-                <option value="rule4">RULE 4: PHYSICAL OR VERBAL ASSAULT OR BATTERY OR ABUSIVE LANGUAGE TO A SCHOOL EMPLOYEE</option>
-                <option value="rule5">RULE 5: PHYSICAL OR VERBAL ASSAULT OR BATTERY BY A STUDENT TO ANY PERSON OTHER THAN A SCHOOL EMPLOYEE</option>
-                <option value="rule6">RULE 6: HARASSMENT, BULLYING, AND OTHER DEROGATORY BEHAVIOR</option>
-                <option value="rule7">RULE 7: INSUBORDINATION</option>
-                <option value="rule8">RULE 8: Making False Reports</option>
-                <option value="rule9">RULE 9: HONOR CODE VIOLATION</option>
-                <option value="rule10">RULE 10: WEAPONS AND DANGEROUS INSTRUMENTS/HAZARDOUS OBJECTS/UNAUTHORIZED ITEMS</option>
-                <option value="rule11">RULE 11: ALCOHOL AND OTHER DRUGS/PSYCHOACTIVE SUBSTANCES</option>
-                <option value="rule12">RULE 12: ATTENDANCE</option>
-                <option value="rule13">RULE 13: DRESS AND GROOMING</option>
-                <option value="rule14">RULE 14: TOBACCO USE/CIGARETTE PRODUCTS INCLUDING: E-CIGARETTES, JULING & VAPING</option>
-                <option value="rule15">RULE 15: GAMBLING</option>
-                <option value="rule16">RULE 16: SEXUAL HARASSMENT</option>
-                <option value="rule17">RULE 17: SEXUAL MISCONDUCT/SEXUAL OFFENSES</option>
-                <option value="rule18">RULE 18: TECHNOLOGY OFFENSES</option>
-                <option value="rule19">RULE 19: GANG RELATED ACTIVITY</option>
-                <option value="rule20">RULE 20: INTERFERENCE WITH SCHOOL BUS</option>
-                <option value="rule21">RULE 21: OFF-CAMPUS MISCONDUCT</option>
-                <option value="rule22">RULE 22: ENCOURAGING VIOLATIONS OF CODE OF CONDUCT</option>
-                <option value="rule23">RULE 23: VERBAL/WRITTEN EXPLICIT AND/OR IMPLIED THREAT</option>
-                <option value="rule24">RULE 24: THEFT</option>
-            </select>
-            
-    
-            <!-- Subcategories (based on selected option) -->
-            <select id="subrules" name="subrules" style="display: none;">
-
-            </select>
-    
-            <!-- Location (from a list of locations) -->
-            <select id="location" name="location">
-                <option value="" disabled="" selected="">Select your location</option>
-                <option value="location1">Location 1</option>
-                <option value="location2">Location 2</option>
-                <option value="location3">Location 3</option>
-            </select>
-    
-            <!-- Text box -->
-            <textarea id="userInput" name="userInput" rows="5" placeholder="Briefly explain the event"></textarea>
-    
-            <!-- Submit button -->
-            <input type="submit" value="Submit" style="float: right;">
-        </form>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="portfolio.html" class="cta-button">Portfolio</a>
+        <a href="contacts.html" class="cta-button">Contact</a>
+        <a href="blog.html" class="cta-button">Blog</a>
+    </nav>
+    <!-- Featured content section -->
+    <section id="featured-content">
+        <h2>Featured Projects</h2>
+        <!-- Add project highlights here -->
+    </section>
+    <!-- Selfie image -->
+<div class="mycontainer">
+     <div class="selfie-container">
+        <div class="selfie-image">
+            <img src="picture.png" alt="Eren Alp Ertem">
+        </div>
     </div>
-    <script>
-        const rulesDropdown = document.getElementById('rules');
-        const subrulesDropdown = document.getElementById('subrules');
-    
-        // Event listener for changes in the options dropdown
-        rulesDropdown.addEventListener("change", function () {
-            const selectedRule = rulesDropdown.value;
-    
-            // Show/hide suboptions based on the selected option
-            if (selectedRule === "rule1") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule1a">1a.II Block Property/Traffic</option>
-                    <option value="subrule1b">1b.II Disruption/Disruptive Behavior</option>
-                    <option value="subrule1c">1c.III False Fire Alarm</option>
-                    <option value="subrule1d">1d.I Public Displays of Affection</option>
-                    <option value="subrule1e">1e.I Horseplay, Rough or Boisterous Activities</option>
-                    <option value="subrule1f">1f.III Sexual Activity, Consensual</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule2") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule2a">2a.II Attempt to Alter/Damage School/Private Property</option>
-                    <option value="subrule2b">2b.III Actual Alter/Damage of School/Private Property</option>
-                    <option value="subrule2c">2c.III Arson of School or Private Property</option>
-                    <option value="subrule2d">2d.II Possess/Distribute Items (non- drug)</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule3") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule3a">3a.II Trespass School Property</option>
-                    <option value="subrule3b">3b.III Breaking/Entering Private Property</option>
-                    <option value="subrule3c">3c.II Unauthorized Area</option>
-                    <option value="subrule3d">3d.III Unauthorized Entry of Unauthorized person(s)</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule4") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule4a">4a.IV Battery Employee with Serious Injury</option>
-                    <option value="subrule4b">4b.IV Battery Employee Without Serious Injury-ΔΔ</option>
-                    <option value="subrule4c">4c.IV Assault/Threaten Employee-ΔΔ</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule5") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule5a">5a.IV- Battery Student/Other with serious injury-ΔΔΔ</option>
-                    <option value="subrule5b">5b.III Battery Student/Other without Serious Injury</option>
-                    <option value="subrule5c">5c.III Fight Student/Other</option>
-                    <option value="subrule5d">5d.IV Group Fight -Δ</option>
-                    <option value="subrule5e">5e.III Assault/Threaten another person</option>
-                    <option value="subrule5f">5f.II Consensual Hazing, Initiation, or Bodily Modifications</option>
-                    <option value="subrule5g">5g.III Stalking</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule6") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule6a">6a.III Harassment: Disability/Race/Color/National Origin/Religion/Sexual Orientation</option>
-                    <option value="subrule6b">6b.IV- Bullying/Cyberbullying -ΔΔ</option>
-                    <option value="subrule6c">6c.I Profane/Vulgar Language or Gestures towards a student</option>
-                    <option value="subrule6d">6d.III Offensive Material (Non-Technology)</option>
-                    <option value="subrule6e">6e.IV Forcefully abduct, transport, detain a Person-ΔΔΔ</option>
-                    <option value="subrule6f">6f.II Teasing/Taunting</option>
-                    <option value="subrule6g">6g.II Profanity/verbal abuse of an employee, staff, or visitor</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule7") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule7a">7a.I Fail to Follow Rules/Laws or Blatant Defiance of an Employee</option>
-                    <option value="subrule7b">7b.III No Contact Contract Violation</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule8") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule8a">8a.III Making False Reports or Statements</option>
-                    <option value="subrule8b">8b.IV Making a False Report of a Serious Crime to School or Emergency Services ΔΔΔ</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule9") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule9a">9a.I Honor Code</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule10") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule10a">10a (Cat I).IV Category I Weapon: Firearm/Dangerous Weapon</option>
-                    <option value="subrule10b">10b (Cat II).III Category II Weapon: Hazardous Object</option>
-                    <option value="subrule10c">10c (Cat III).II Category III Weapon/Dangerous Instrument/Unauthorized Items</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule11") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule11a">11a.III Alcohol/Drug Possession/Under the Influence</option>
-                    <option value="subrule11b">11b.III Drug Paraphernalia</option>
-                    <option value="subrule11c">11c.III False Identification Drug/Alcohol</option>
-                    <option value="subrule11d">11d.IV Alcohol or Drug Sale/Distribution-Δ</option>
-                    <option value="subrule11e">11e.III Influence of Inhalants/Other</option>
-                    <option value="subrule11f">11f.III Possession of Non-Prescription Medication</option>
-                    <option value="subrule11g">11g.III Distribution/Sale of Non-Prescription Medication</option>
-                    <option value="subrule11h">11h.III Possession of Prescription Drugs</option>
-                    <option value="subrule11i">11i.IV Distribution of Prescription Drugs -Δ</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule12") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule12a">12a.I Excessive Tardiness/Class Cuts</option>
-                    <option value="subrule12b">12b.II Attendance</option>
-                    <option value="subrule12c">12c.I Failure to attend Detention/ISS/Saturday School</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule13") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule13a">13a.I Improper Dress</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule14") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule14a">14a.II Tobacco/Vaping use/possession</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule15") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule15a">15a.I Gambling</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule16") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule16a">16a.III Sexual Harassment</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule17") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule17a">17a.II Mooning/Related Behavior</option>
-                    <option value="subrule17b">17b.III Sexual Battery</option>
-                    <option value="subrule17c">17c.IV Sexual Molestation-ΔΔΔ</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule18") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule18a">18a.II Technology/Computer Misuse</option>
-                    <option value="subrule18b">18b.III Unauthorized Copy Computer Software</option>
-                    <option value="subrule18c">18c.III Threat/Damage Property Using Tech</option>
-                    <option value="subrule18d">18d.III Display Inappropriate Material Using Tech</option>
-                    <option value="subrule18e">18e.I Cell Phone/Electronic Devices/Recording Devices</option>
-                    <option value="subrule18f">18f.II Prohibited Use of Personal Communication Devices (PCD) During School Day</option>
-                    <option value="subrule18g">18g.III Inappropriate Recording and Distribution Using Personal Communication Devices (PCD)</option>
-                    <option value="subrule18h">18h.III Tamper/Phish/Hack District Network</option>
-                    <option value="subrule18i">18i.I Violate District Responsible Use Agreement</option>
-                    <option value="subrule18j">18j.III Sexually Explicit or Pornographic Material Using Technology</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule19") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule19a">19a.III Gang Activity</option>
-                    <option value="subrule19b">19b.III Intentional Display Gang Tattoos, Paraphernalia, Graffiti, etc.</option>
-                    <option value="subrule19c">19c.III Gang Recruitment/ Solicitation</option>
-                `;
-                subrulesDropdown.style.display = "block"; // Show suboptions
-            } else if (selectedRule === "rule20") {
-                subrulesDropdown.innerHTML = `
-                    <option value="" disabled="" selected="">Select the violated subrule</option>
-                    <option value="subrule20a">20a.II Bus Interference</option>
-                <option value="subrule20b">20b.III Bus Interference while bus in motion</option>
-            `;
-            subrulesDropdown.style.display = "block"; // Show suboptions
-        } else if (selectedRule === "rule21") {
-            subrulesDropdown.innerHTML = `
-                <option value="" disabled="" selected="">Select the violated subrule</option>
-                <option value="subrule21a">21a.IV Off Campus Misconduct -ΔΔΔ</option>
-            `;
-            subrulesDropdown.style.display = "block"; // Show suboptions
-        } else if (selectedRule === "rule22") {
-            subrulesDropdown.innerHTML = `
-                <option value="" disabled="" selected="">Select the violated subrule</option>
-                <option value="subrule22a">22a.II Encouraging Misconduct</option>
-            `;
-            subrulesDropdown.style.display = "block"; // Show suboptions
-        } else if (selectedRule === "rule23") {
-            subrulesDropdown.innerHTML = `
-                <option value="" disabled="" selected="">Select the violated subrule</option>
-                <option value="subrule23a">23a.II Level 1 Threat</option>
-                <option value="subrule23b">23b.III Level 2 Threat</option>
-                <option value="subrule23c">23c.IV Level 3 Threat- ΔΔΔ</option>
-                <option value="subrule23d">23d.IV Bomb/Explosive Threat-ΔΔΔ</option>
-            `;
-            subrulesDropdown.style.display = "block"; // Show suboptions
-        } else if (selectedRule === "rule24") {
-            subrulesDropdown.innerHTML = `
-                <option value="" disabled="" selected="">Select the violated subrule</option>
-                <option value="subrule24a">24a.II Theft of Student, School or Private Property up to $100.00 or unknown value</option>
-                <option value="subrule24b">24b.III Theft of Student, School or Private Property over $100.00</option>
-                <option value="subrule24c">24c.III Theft of Employee Property up to $100.00 or unknown value</option>
-                <option value="subrule24d">24d.IV Theft of Employee over $100.00- ΔΔΔ</option>
-                <option value="subrule24e">24e.IV Robbery-ΔΔΔ</option>
-            `;
-            subrulesDropdown.style.display = "block"; // Show suboptions
-        } else {
-            subrulesDropdown.style.display = "none"; // Hide suboptions if no rule is selected
-        }
-    });
-</script>
-    
+    <div>
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+</div>
+    <!-- Other sections (about, skills, etc.) -->
+    <!-- ... -->
 </body>
 </html>
